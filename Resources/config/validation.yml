@@ -1,0 +1,14 @@
+MediaBundle\Entity\Media:
+    properties:
+        type:
+          - NotBlank: ~
+        url:
+          - NotBlank: { groups: [video]}
+          - Url: { groups: [video]}
+        urlThumbnail:
+          - NotBlank: { groups: [video]}
+          - Url: { groups: [video]}
+        file:
+            - File: { mimeTypes: [image/*], maxSize: 1024k, maxSizeMessage: "File too large max 1024k size" , mimeTypesMessage: Please upload a valid IMAGE, disallowEmptyMessage: File is needed, groups: [meme, meme_new] }
+            - NotNull: { groups: [meme_new] }
+            - Image: { minWidth: 500, minWidthMessage: Error, groups: [meme, meme_new]}

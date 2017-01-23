@@ -1,0 +1,6 @@
+MediaBundle\Entity\Media:
+  exclusion_policy: ALL
+  properties:
+    type: true
+    url: true
+    urlThumbnail: true

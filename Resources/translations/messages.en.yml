@@ -1,0 +1,4 @@
+form.media.children.type.label: Type
+form.media.children.file.label:	File
+form.media.children.url.label:	Url
+form.media.children.urlThumbnail.label:	Url Thumbnail

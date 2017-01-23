@@ -1,0 +1,47 @@
+MediaBundle\Entity\Media:
+    type: entity
+    table: null
+    repositoryClass: MediaBundle\Repository\MediaRepository
+    gedmo:
+      soft_deleteable:
+        field_name: deletedAt
+        time_aware: false
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        type:
+            type: integer
+        file:
+            type: string
+            nullable: true
+        path:
+            type: string
+            nullable: true
+        mimeType:
+            type: string
+            nullable: true
+        size:
+            type: decimal
+            nullable: true
+        url:
+            type: string
+        urlThumbnail:
+            type: string
+        createdAt:
+            type: datetime
+            gedmo:
+              timestampable:
+                on: create
+        updatedAt:
+            type: datetime
+            gedmo:
+              timestampable:
+                on: update
+        deletedAt:
+            type: datetime
+            nullable: true
+    lifecycleCallbacks: {  }

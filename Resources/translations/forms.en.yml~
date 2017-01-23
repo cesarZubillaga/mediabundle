@@ -1,0 +1,16 @@
+forms:
+  media:
+    labels:
+      file: "File"
+      url: "Url"
+      urlThumbnail: "Url Thumbnail"
+      title: "Title"
+      description: "Description"
+      shortDescription:  "shortDescription"
+      noTeams: "noTeams"
+      teams: "teams"
+      moderator: "moderator"
+      free: "free"
+      credits: "credits"
+      payUntil: "payUntil"
+      active: "active"

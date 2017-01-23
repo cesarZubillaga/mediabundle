@@ -1,0 +1,31 @@
+form:
+  media:
+    children:
+      file:
+        label:	'File'
+      url:
+        label:	Url
+      urlThumbnail:
+        label:	Url Thumbnail
+      title:
+        label:	Title
+      description:
+        label:	Description
+      shortDescription:
+        label:	ShortDescription
+      noTeams:
+        label:	No Teams
+      teams:
+        label:	Teams
+      moderators:
+        label:	Moderators
+      free:
+        label:	Free
+      credits:
+        label:	Credits
+      payUntil:
+        label:	Pay Until
+      active:
+        label:	Active
+      submit:
+        label:	Submit

@@ -1,0 +1,11 @@
+services:
+    media.service.media_manager:
+        class: MediaBundle\Service\MediaManager
+        arguments: ["%kernel.root_dir%", "%upload_media_path%"]
+    media.listener.media:
+        class: MediaBundle\Listener\MediaListener
+        arguments: ["@media.service.media_manager", "%upload_media_path%", "%meme_base_url%"]
+        tags:
+           - { name: doctrine.event_listener, event: prePersist }
+           - { name: doctrine.event_listener, event: preUpdate }
+           - { name: doctrine.event_listener, event: preRemove }
